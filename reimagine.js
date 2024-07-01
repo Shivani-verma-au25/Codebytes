@@ -328,3 +328,86 @@ function page8(){
 }
 
 page8()
+
+
+
+
+
+// shery.js
+Shery.mouseFollower();
+
+
+// text animation
+Shery.textAnimate("#divp>p  " /* Element to target.*/, {
+    //Parameters are optional.
+    style: 2,
+    y: 2,
+    delay: 0.1,
+    duration: 0.1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    // ease: "cubic-bezier(.17,.67,.76,.05)",
+    multiplier: 0.1,
+  });
+
+  Shery.textAnimate(" #page2>h1  " /* Element to target.*/, {
+    //Parameters are optional.
+    style: 2,
+    y: 2,
+    delay: 0.2,
+    duration: 0.1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    // ease: "cubic-bezier(.17,.67,.76,.05)",
+    multiplier: 0.1,
+  });
+
+
+// letters animations
+
+let clutter = ""
+function split(){
+    document.querySelector('#divp>p').textContent.split("").forEach(function(item){
+      clutter += `<span>${item}</span>`
+    })
+    document.querySelector('#divp>p').innerHTML = clutter
+}
+split()
+gsap.to('#divp>p>span',{
+  scrollTrigger:{
+    trigger:'#divp>p>sapn',
+    scroller:'#main',
+    start:'top 10%',
+    end:'100% top',
+    scrub:.1,
+    markers:true
+  },
+  stagger:.1,
+  opacity:0
+})
+
+
+
+// for headings
+let clutter2 = ""
+function split2(){
+    document.querySelector('#hid').textContent.split("").forEach(function(item){
+      clutter += `<span>${item}</span>`
+    })
+    document.querySelector('#divp').innerHTML = clutter
+}
+split2()
+gsap.to('#divp>span',{
+  scrollTrigger:{
+    trigger:'#divp>sapn',
+    scroller:'#main',
+    start:'top 10%',
+    end:'100% top',
+    scrub:.1,
+    markers:true
+  },
+  stagger:.1,
+  opacity:0
+})
+
+ 
+
+

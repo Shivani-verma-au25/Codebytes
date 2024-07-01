@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="reimagine.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+
 </head>
 
 <body >
@@ -44,7 +46,6 @@
                         <div class="des">
                             <p>National Geographic works tirelessly to protect endangered species, supporting global conservation initiatives and raising awareness about the plight of wildlife at risk.</p>
                         </div>
-                        <button>See More</button>
                     </div>
                 </div>
                 <div class="item"
@@ -120,13 +121,13 @@
             <div id="page2co">
                 <div id="card1">
                     <div id="car11">
-                        <img src="https://i.natgeofe.com/n/b744ab3f-3b6c-427e-9c94-2940c7e8e044/X20240510_AuroraStorm_Tafreshi_BabakTafreshi.jpg?w=1280&h=1920"
+                        <img class="img" src="https://i.natgeofe.com/n/b744ab3f-3b6c-427e-9c94-2940c7e8e044/X20240510_AuroraStorm_Tafreshi_BabakTafreshi.jpg?w=1280&h=1920"
                             alt="">
                     </div>
                     <div id="car12">
                         <h1>Brian Skerry </h1>
                         <p>The visual storyteller and astronomer</p>
-                        <button>button</button>
+                        <button class="">button</button>
                     </div>
                 </div>
 
@@ -163,26 +164,37 @@
                     <p>National Geographic explores the urgent issue of global warming, documenting its impacts on ecosystems, weather patterns, and communities worldwide. Through science, education, and advocacy, we aim to raise awareness, inspire action, and mitigate the effects of climate change for a sustainable future</p>
                 </div>
             </div>
-            <video muted loop autoplay
-                src="https://daisheng.com.tw/wp-content/themes/daisheng/assets/video/mv_movie.mp4"></video>
+            <div class="img" >
+                <video muted loop autoplay src="https://videos.pexels.com/video-files/6981418/6981418-hd_1920_1080_25fps.mp4"></video>
+                <div class="overlay-img"></div>
+            </div>
+            
         </div>
         <div id="collect">
-            <div id="page4">
-                <div id="page41">
+            <div id="page4" >
+                <div id="page41" >
                     <img src="https://images.unsplash.com/photo-1554990772-0bea55d510d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlvbnN8ZW58MHx8MHx8fDA%3D" alt="">
                 </div>
                 <div id="page42">
                     <h1>Monarch</h1>
-                    <p>National Geographic's  <br> exploration unveils the lion's  <br>dominance, social intricacies, <br>and conservation challenges, highlighting <br>  its critical role in ecosystems.</p>
+                    <p >National Geographic's  <br> exploration unveils the lion's  <br>dominance, social intricacies, <br>and conservation challenges, highlighting <br>  its critical role in ecosystems.</p>
+                    <a class="box__link button-animation" href="#">
+                        Know More
+                      </a>
                 </div>
 
             </div>
             <div id="page5">
                 <div id="page51">
                     <h1>Wildlords</h1>
-                    <p>National Geographic delves into the <br> world of these iconic mammals, <br>exploring their habitats, <br>behaviors, and conservation challenges,  <br> howcasing their role as keystone species in  <br>  diverse ecosystems.
-
-                    </p>
+                    <p>National Geographic delves into the <br> world of these iconic mammals, <br>exploring their habitats, <br>behaviors, and conservation challenges,  <br> howcasing their role as keystone species in  <br>  diverse ecosystems.</p>
+                    <a class="box__link button-animation" href="#">
+                        Know More
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
                 </div>
                 <div id="page52">
                  <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#" alt="">
@@ -206,19 +218,53 @@
                 <div id="page62">
                     <div id="key1" class="key">
                         <img src="https://origin-sire-media.fichub.com/ng_za/card-image/690991.1200x675.webp" alt="">
-                        <div class="overlay"></div>
+                        <div class="overlay">
+                            <div class="overly-details">
+                                <h5>NATIONAL GEOGRAPHIC</h5>
+                                <p> TO CATCH A SMUGGLER</p>
+                                <h6>THURSDAYS AT 19:00 FROM 13 JUNE</h6>
+                            </div>
+                        </div>
                     </div>
                     <div id="key2" class="key">
-                        <img src="https://origin-sire-media.fichub.com/ng_za/serie-main/597240.1024x576.webp" alt="">
+                        <img src="https://origin-sire-media.fichub.com/ng_za/serie-main/624826.1200x675.webp" alt="">
+                        <div class="overlay">
+                            <div class="overly-details">
+                                <h5>NATIONAL GEOGRAPHIC</h5>
+                                <p> RESTAURANTS AT THE END OF THE WORLD</p>
+                                <h6>SUNDAY 19:10 CAT</h6>
+                            </div>
+                        </div>
                     </div>
                     <div id="key3" class="key">
                         <img src="https://origin-sire-media.fichub.com/ng_za/card-image/690988.1200x675.webp" alt="">
+                        <div class="overlay">
+                            <div class="overly-details">
+                                <h5>NATIONAL GEOGRAPHIC WILD</h5>
+                                <p> WILD, SMART AND DEADLY</p>
+                                <h6>WEDNESDAYS FROM 18:00, FROM 5 JUNE</h6>
+                            </div>
+                        </div>
                     </div>
                     <div id="key4" class="key">
-                        <img src="https://origin-sire-media.fichub.com/generic/clip-main/691684.1024x576.webp" alt="">
+                        <img src="https://origin-sire-media.fichub.com/ng_za/serie-main/688703.1024x576.webp" alt="">
+                        <div class="overlay">
+                            <div class="overly-details">
+                                <h5>NATIONAL GEOGRAPHIC WILD</h5>
+                                <p> SECRETS OF THE WHALES (YR 1 EPS 1-4)</p>
+                                <h6>SUNDAY 19:35 CAT</h6>
+                            </div>
+                        </div>
                     </div>
                     <div id="key5" class="key">
-                        <img src="https://origin-sire-media.fichub.com/ng_za/serie-main/554869.1200x675.webp" alt="">
+                        <img src="https://origin-sire-media.fichub.com/generic/clip-main/503749.1024x576.webp" alt="">
+                        <div class="overlay">
+                            <div class="overly-details">
+                                <h5>NATIONAL GEOGRAPHIC WILD</h5>
+                                <p> PROMO</p>
+                                <h6>SEASON 9 SNAKES IN THE CITY</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,7 +393,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="reimagine.js"></script>
+        <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+        <script src="reimagine.js"></script>
 </body>
 
 </html>

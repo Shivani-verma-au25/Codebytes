@@ -24,7 +24,6 @@ body {
     left: 0%;
     width: 100%;
     height: 100vh;
-    background: #b03a3a;
 }
 
 .container .slide .item {
@@ -195,7 +194,8 @@ font-family: Arial, Helvetica, sans-serif;
 #page2 {
     height: 100vh;
     width: 100%;
-    /* background-color: ; */
+    /* background-color:#ffd700 ; */
+    background-color:var(--teriary-color);
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -231,6 +231,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 }
 
+
 #page2 h2 {
     color: var(--secondary-color);
     margin-top: 50px;
@@ -240,12 +241,15 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #page2>h1 {
-    margin-bottom: 400px;
+    margin-bottom: 500px;
     color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    letter-spacing: 12px;
+    font-weight:100;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: oblique;
 }
+
 
 #card1 {
     background-color: var(--secondary-color);
@@ -333,18 +337,20 @@ font-family: Arial, Helvetica, sans-serif;
 
 #divh1 h1 {
     font-size: 180px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-    color: gold;
+    color: var(--secondary-color);
 }
 
 #divp p {
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
-    color: gold;
+    color: var(--secondary-color);
+    padding-inline: 13vw;
+    text-align:center;
 }
 
 #divh1 {
@@ -535,14 +541,59 @@ font-family: Arial, Helvetica, sans-serif;
 #page62 {
     display: flex;
     justify-content: space-between;
+    /* position: relative; */
 }
 
 #page62 div {
     height: 90%;
     width: 18%;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     border-radius: 20px;
 
+}
+.key{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+}
+#page62 div >.overlay{
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.843);
+    position: absolute;
+    /* z-index: 99; */
+    top: 100%;
+    left: 0;
+    transition: top .2s ease-in-out;
+    display: flex;
+    justify-items: end;
+    align-items: start;
+    flex-direction: column;
+    gap: .1vw;
+    padding-top: 1vw;
+    padding-left: .4vw;
+
+}
+#page62 div:hover .overlay{
+    top: 0%;
+    cursor: pointer;
+}
+.overly-details{
+    /* background-color: yellow; */
+}
+.overly-details h5{
+    font-size: .7vw;
+    margin-top: 1vw;
+}
+.overly-details p{
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+.overly-details h6{
+    font-size: .7vw;
+    font-weight: 500;
 }
 
 #nav {
@@ -793,12 +844,7 @@ font-family: Arial, Helvetica, sans-serif;
 .video-container{
     overflow: hidden;
 }
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.382);
-    
-}
+
 #circle8{
     height: 400px;
     width: 400px;
@@ -821,3 +867,50 @@ font-family: Arial, Helvetica, sans-serif;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
+.img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+.overlay-img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.446);
+    position: absolute;
+    top: 0%;
+}
+
+/* button  */
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+.button-animation {
+    position: relative;
+    display: inline-block;
+    padding: 20px 20px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    span {
+      position: absolute;
+      display: block;
+    }
+    /*  */
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+      border-radius: 5px;
+      box-shadow:  0 0 5px #d0f403, 0 0 25px #d8f403, 0 0 50px #ecf403,
+      0 0 100px #f4f003;
+    }
+  }
+
